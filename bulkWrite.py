@@ -4,7 +4,7 @@ import json
 import os
 # Upload JSON to MongoDB collection in bulk
 def upload_to_mongodb(json_data, collection_name):
-    client = MongoClient('mongodb+srv://techloset:techloset1214@cluster0.zkvgw.mongodb.net/resumas?retryWrites=true&w=majority')
+    client = MongoClient('<your_mongodb_url>')
     db = client['resumas']
     collection = db[collection_name]
     
